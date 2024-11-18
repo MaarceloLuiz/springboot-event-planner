@@ -24,8 +24,8 @@ public class Activity {
 
     @ManyToMany
     @JoinTable(name = "tb_participant_activity",
-            joinColumns = @JoinColumn(name = "participant_id"),
-            inverseJoinColumns = @JoinColumn(name = "activity_id"))
+            joinColumns = @JoinColumn(name = "activity_id"),
+            inverseJoinColumns = @JoinColumn(name = "participant_id"))
     private Set<Participant> participants = new HashSet<>();
 
     @ManyToOne

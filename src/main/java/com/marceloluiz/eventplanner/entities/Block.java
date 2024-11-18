@@ -14,9 +14,9 @@ public class Block {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     @Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
-    private Instant beginTime;
+    private Instant start;
     @Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
-    private Instant endTime;
+    private Instant finish;
 
     @ManyToOne
     @JoinColumn(name = "activity_id")
